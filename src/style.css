@@ -1,18 +1,153 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+:root {
+    --primary-dark: #3C0542;
+    --primary: #3D0443;
+    --secondary: #8A0A99;
+    --accent: #B00FC2;
+    --light-accent: #EA7FF5;
+
+    --white: #FFFFFF;
+    --background: #F8F5FA;
+    --text: #2B2B2B;
+    --border: #E6D8E8;
 }
 
-.agendar {
-    width: 100px;
-    height: 50px;
-    background-color: #007bff;
-    color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite GB J", cursive;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.logotitle {
+    margin: 0;
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 0 4px 12px rgba(176,15,194,.15);
+}
+
+.lotus-logo {
+    width: 180px;
+    height: 180px;
+
+    background-color: var(--accent);
+
+    -webkit-mask: url('./assets/lotus.png') center/contain no-repeat;
+    mask: url('./assets/lotus.png') center/contain no-repeat;
+
+    transition: transform 0.3s ease;
+}
+
+.lotus-logo:hover {
+    transform: scale(1.05);
+}
+
+
+body {
+    background:linear-gradient(
+        180deg,
+        #EA7FF5 0%,
+        #fdf8ff 30%,
+        #ffffff 100%
+    );
+}
+
+h1 {
+    margin-top: 30px;
+    color: var(--secondary);
+}
+
+.appointment-container {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.appointment-card {
+    width:100%;
+    max-width:390px;
+
+    background:var(--white);
+
+    border-radius:24px;
+    padding:24px;
+
+    border:1px solid rgba(176,15,194,.15);
+
+    box-shadow:
+        0 12px 32px rgba(60,5,66,.12);
+}
+
+.appointment-title {
+    text-align:center;
+    margin-bottom:24px;
+
+    color:var(--primary-dark);
+
+    font-size:1.8rem;
+    font-weight:400;
+}
+
+.font-group {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.input-label {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight:600;
+    color:var(--primary);
+}
+
+.input-date,
+.input-procedure,
+.input-client-name,
+.input-cpf,
+.input-phone {
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 0 14px;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.input-date:focus,
+.input-procedure:focus,
+.input-client-name:focus,
+.input-cpf:focus,
+.input-phone:focus {
+    outline:none;
+    border-color: var(--accent);
+    box-shadow:
+        0 0 0 4px rgba(176,15,194,.15);
+}
+
+.btn-submit {
+    width: 100%;
+    height: 52px;
     border: none;
-    border-radius: 5px;
+    border-radius: 14px;
+    background: var(--light-accent);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
+    margin-top: 12px;
+    transition: .3s;
+
 }
