@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1 class="logotitle">Lotus</h1>
+        <img
+            src="./src/assets/lotus.png"
+            alt="Flor de Lótus"
+            class="lotus-logo"
+        >
+    </div>
+
+    <div class="appointment-container">
+        <div class="appointment-card">
+
+            <h1 class="appointment-title">
+                Novo Agendamento
+            </h1>
+
+            <form id="appointmentForm">
+
+                <div class="form-group">
+                    <label for="appointmentDate" class="input-label">
+                        Data de agendamento
+                    </label>
+                    <input
+                    type="date"
+                    id="appointmentDate"
+                    class="input-date"
+                    required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="procedureName" class="input-label">
+                        Nome do procedimento
+                    </label>
+                    <input
+                        type="text"
+                        id="procedureName"
+                        class="input-procedure"
+                        placeholder="Ex: Harmonização Facial"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="clientName" class="input-label">
+                        Nome do cliente
+                    </label>
+                    <input
+                        type="text"
+                        id="clientName"
+                        class="input-client-name"
+                        placeholder="Digite o nome do cliente"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="cpf" class="input-label">
+                        CPF (Opcional)
+                    </label>
+                    <input
+                    type="text"
+                    id="cpf"
+                    class="input-cpf"
+                    placeholder="123.456.789-10"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="input-label">
+                        Número de telefone
+                    </label>
+                    <input
+                    type="tel"
+                    id="phone"
+                    class="input-phone"
+                    placeholder="(71)99876-5432"
+                    required
+                    >
+                </div>
+
+                <button
+                type="submit"
+                class="btn-submit"
+                >
+                    Agendar
+                </button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
