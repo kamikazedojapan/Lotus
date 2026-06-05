@@ -2,7 +2,7 @@
 
 | 💻 Comando Git | 🕒 Quando usar? | ❓ O que ele faz na prática? | 🎯 Por que fazer isso? |
 | --- | --- | --- | --- |
-git clone https://github.com/AngelZ5/Glowflow:| Apenas na primeira vez que for começar a mexer no projeto | Copia a pasta inteira do Glowflow da internet para o seu computador. | Para você ter os arquivos do projeto prontos para editar na sua máquina.
+git clone https://github.com/kamikazedojapan/Lotus| Apenas na primeira vez que for começar a mexer no projeto | Copia a pasta inteira do Glowflow da internet para o seu computador. | Para você ter os arquivos do projeto prontos para editar na sua máquina.
 | `git checkout main` | Sempre antes de começar uma tarefa nova no dia. | Muda a sua tela para a linha do tempo principal do projeto. | Para garantir que você não vai criar coisas novas baseado em códigos antigos. | 
 | `git pull origin main` | Logo após dar o comando `git checkout main`. | Vai até o GitHub e baixa todas as novidades que o seu time fez. | Para o seu computador ficar atualizado em tempo real com o resto do grupo. |
 | `git checkout -b <nome>` | Sempre que for iniciar uma tarefa nova do Trello. | Cria uma linha do tempo alternativa (uma ramificação ou *branch*). | Para você programar livremente sem estragar ou apagar o código dos seus colegas. |
